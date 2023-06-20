@@ -1,0 +1,34 @@
+#configuração 
+version: '3'
+services:
+    forms:
+        #depends_on:
+        # - nginx
+        container_name: forms
+        restart: always
+        build:
+          context: .
+          dockerfile: Dockerfile
+        ports:
+          - 4200:4200
+        environment:
+            - VIRTUAL_HOST=0.0.0.0
+            - NODE_ENV=development
+        networks:
+           - network-teste
+        volumes:
+           # pode ser o caminho completo ou ../ para acessar o diretório acima da pasta atual
+           # /home/izaque/projetos_trabalho/git/forms
+           - .:/forms
+           - /forms/node_modules
+           - /.angular/:/forms/.angular
+           #- ./node_modules:/sisre/node_modules
+    
+networks:
+  network-teste:
+    #driver: bridge
+    name: network-teste
+    external: true
+
+#volumes:
+#  jenkins_home:
