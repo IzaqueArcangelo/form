@@ -48,7 +48,7 @@ export class AppComponent {
   ];
   uischema = uischemaAsset;
   schema = schemaAsset;
-  data = dataAsset;
+  data = form;
   i18n = {locale: 'de-DE'}
   dateAdapter;
   ajv = createAjv({
