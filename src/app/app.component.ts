@@ -7,6 +7,7 @@ import { LangComponent } from './lang.control';
 import uischemaAsset from '../assets/uischema.json';
 import schemaAsset from '../assets/schema.json';
 import dataAsset from './data';
+import form from './form';
 import { parsePhoneNumber } from 'libphonenumber-js';
 import { DateAdapter } from '@angular/material/core';
 
