@@ -22,6 +22,15 @@
             "properties": {
               "IDDIPLOMADO": {
                 "type": "string"
+              },
+              "NOMEDIPLOMADO": {
+                "type": "string"
+              },
+              "NOME_SOCIAL_DIPLOMADO": {
+                "type": "string"
+              },
+              "SEXODIPLOMADO": {
+                "enum": ["Choice A", "Choice B", "Choice C"]
               }
             }
           }

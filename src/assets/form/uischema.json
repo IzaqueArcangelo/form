@@ -41,30 +41,38 @@
                           "scope": "#/properties/2via"
                         },
                         {
-                          "type": "Group",
+                          "type": "Control",
                           "label": "Diplomas",
-                          "elements": [
-                            {
-                              "type": "HorizontalLayout",
+                          "scope": "#/properties/diplomas",
+                          "options":{
+                            "showSortButtons": true,
+                            "detail": {
+                              "type": "VerticalLayout",
                               "elements": [
                                 {
-                                  "label": "ID do Diplomado",
-                                  "type": "Control",
-                                  "scope": "#/properties/diplomas/properties/IDDIPLOMADO"
-                                },
-                                {
-                                  "label": "Nome do Diplomado",
-                                  "type": "Control",
-                                  "scope": "#/properties/diplomas/properties/NOMEDIPLOMADO"
-                                },
-                                {
-                                  "label": "Nome Social do Diplomado",
-                                  "type": "Control",
-                                  "scope": "#/properties/diplomas/properties/NOME_SOCIAL_DIPLOMADO"
+                                  "type": "HorizontalLayout",
+                                  "elements": [
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/IDDIPLOMADO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMEDIPLOMADO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOME_SOCIAL_DIPLOMADO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/SEXODIPLOMADO"
+                                    }
+                                  ]
                                 }
                               ]
                             }
-                          ]
+                          }
                         },
                         
                         {
