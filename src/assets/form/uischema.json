@@ -1,0 +1,170 @@
+{
+  "type": "Categorization",
+  "elements": [
+    {
+      "type": "Category",
+      "label": "Históricos",
+      "elements": [
+        {
+          "type": "ListWithDetail",
+          "scope": "#/properties/historicos",
+          "options": {
+            "labelRef": "#/items/properties/lote",
+            "detail": {
+              "type": "VerticalLayout",
+              "elements": [
+                {
+                  "type": "HorizontalLayout",
+                  "elements": [
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/lote"
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/descricaoLote"
+                    },
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/design"
+                    }
+                  ]
+                },
+                {
+                  "type": "VerticalLayout",
+                  "elements": [
+                    {
+                      "type": "VerticalLayout",
+                      "elements": [
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/2via"
+                        },
+                        {
+                          "type": "Group",
+                          "label": "Diplomas",
+                          "elements": [
+                            {
+                              "type": "HorizontalLayout",
+                              "elements": [
+                                {
+                                  "label": "ID do Diplomado",
+                                  "type": "Control",
+                                  "scope": "#/properties/diplomas/properties/IDDIPLOMADO"
+                                },
+                                {
+                                  "label": "Nome do Diplomado",
+                                  "type": "Control",
+                                  "scope": "#/properties/diplomas/properties/NOMEDIPLOMADO"
+                                },
+                                {
+                                  "label": "Nome Social do Diplomado",
+                                  "type": "Control",
+                                  "scope": "#/properties/diplomas/properties/NOME_SOCIAL_DIPLOMADO"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        
+                        {
+                          "type": "HorizontalLayout",
+                          "elements": [
+                            {
+                              "type": "Control",
+                              "scope": "#/properties/startDate"
+                            },
+                            {
+                              "type": "Control",
+                              "scope": "#/properties/endDate"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/status"
+                        },
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/ordered",
+                          "options": {
+                            "toggle": true
+                          }
+                        },
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/amount",
+                          "options": {
+                            "slider": true
+                          },
+                          "rule": {
+                            "effect": "DISABLE",
+                            "condition": {
+                              "schema": {
+                                "const": "unordered"
+                              },
+                              "scope": "#/properties/status"
+                            }
+                          }
+                        }
+
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/description",
+                  "options": {
+                    "multi": true
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "Category",
+      "label": "Data",
+      "elements": [
+        {
+          "type": "Label",
+          "text": "Data"
+        },
+        {
+          "type": "Control",
+          "scope": "#/___data"
+        }
+      ]
+    },
+    {
+      "type": "Category",
+      "label": "Language",
+      "elements": [
+        {
+          "type": "Label",
+          "text": "Choose preferred locale"
+        },
+        {
+          "type": "Control",
+          "scope": "#",
+          "options": {
+            "lang": true
+          }
+        }
+      ]
+    },
+    {
+      "type": "Category",
+      "label": "Contracts",
+      "elements": [
+        {
+          "type": "Label",
+          "text": "Currently Empty Category"
+        }
+      ]
+    }
+  ]
+}

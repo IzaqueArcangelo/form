@@ -7,6 +7,8 @@ import { LangComponent } from './lang.control';
 import uischemaAsset from '../assets/uischema.json';
 import schemaAsset from '../assets/schema.json';
 import dataAsset from './data';
+import uischemaForm from '../assets/form/uischema.json';
+import schemaForm from '../assets/form/schema.json';
 import form from './form';
 import { parsePhoneNumber } from 'libphonenumber-js';
 import { DateAdapter } from '@angular/material/core';
@@ -46,9 +48,9 @@ export class AppComponent {
       )
     },
   ];
-  uischema = uischemaAsset;
-  schema = schemaAsset;
-  data = dataAsset;
+  uischema = uischemaForm;
+  schema = schemaForm;
+  data = form;
   i18n = {locale: 'de-DE'}
   dateAdapter;
   ajv = createAjv({

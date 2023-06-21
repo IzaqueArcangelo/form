@@ -1,0 +1,42 @@
+{
+  "definitions": {
+    "historico": {
+      "type": "object",
+      "properties": {
+        "lote": {
+          "type": "string"
+        },
+        "descricaoLote": {
+          "type": "string"
+        },
+        "design": {
+          "type": "string"
+        },
+        "2via": {
+          "type": "boolean"
+        },
+        "diplomas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "IDDIPLOMADO": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "historicos": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/historico"
+      }
+    }
+  },
+  "required": ["title"]
+}
