@@ -1,7 +1,7 @@
 export default {
-  orders: [
+  historicos: [
     {
-      lote:"TESTE",
+      "lote":"TESTE",
       "descricaoLote":"TESTE",
       "design":"",
       "2via":false,
