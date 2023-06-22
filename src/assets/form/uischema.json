@@ -50,7 +50,7 @@
                               "type": "VerticalLayout",
                               "elements": [
                                 {
-                                  "type": "HorizontalLayout",
+                                  "type": "VerticalLayout",
                                   "elements": [
                                     {
                                       "type": "Control",
@@ -67,6 +67,79 @@
                                     {
                                       "type": "Control",
                                       "scope": "#/properties/SEXODIPLOMADO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NACIONALIDADEDIPLOMADO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CODIGOMUNICIPIONATURALIDADE"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMEMUNICIPIONATURALIDADE"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/UFNATURALIDADE"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOME_MUNICIPIO_ESTRANGEIRO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/TIPO_DOC_OUTRO_DOC_IDENTIFICACAO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/IDENTIFICADOR_OUTRO_DOC_IDENTIFICACAO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CPFNATURALIDADE"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMERORG"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/ORGAOEXPEDIDORRG"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATANASCIMENTORG"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMECURSODADOSCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CODIGOCURSOEMECDADOSCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "label": "HABILITACAO_DADOS_CURSO",
+                                      "scope": "#/properties/HABILITACAO_DADOS_CURSO",
+                                      "options":{
+                                        "showSortButtons": true,
+                                        "detail": {
+                                          "type": "VerticalLayout",
+                                          "elements": [
+                                            {
+                                              "type": "Control",
+                                              "scope": "#/properties/NOMEHABILITACAO"
+                                            },
+                                            {
+                                              "type": "Control",
+                                              "scope": "#/properties/DATAHABILITACAO"
+                                            }
+                                          ]
+                                        }
+                                      }
                                     }
                                   ]
                                 }

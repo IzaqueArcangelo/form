@@ -4,16 +4,20 @@
       "type": "object",
       "properties": {
         "lote": {
-          "type": "string"
+          "type": "string",
+          "label": "LOTE"
         },
         "descricaoLote": {
-          "type": "string"
+          "type": "string",
+          "label": "DESCRIÇÃO LOTE"
         },
         "design": {
-          "type": "string"
+          "type": "string",
+          "label": "Desing"
         },
         "2via": {
-          "type": "boolean"
+          "type": "boolean",
+          "label": "2º VIA"
         },
         "diplomas": {
           "type": "array",
@@ -21,16 +25,72 @@
             "type": "object",
             "properties": {
               "IDDIPLOMADO": {
-                "type": "string"
+                "type": "string",
+                "label": "ID DO DIPLOMADO"
               },
               "NOMEDIPLOMADO": {
-                "type": "string"
+                "type": "string",
+                "label": "NOME DO DIPLOMADO"
               },
               "NOME_SOCIAL_DIPLOMADO": {
                 "type": "string"
               },
               "SEXODIPLOMADO": {
-                "enum": ["Choice A", "Choice B", "Choice C"]
+                "enum": ["", "M", "F"],
+                "label": "SEXO DO DIPLOMADO"
+              },
+              "NACIONALIDADEDIPLOMADO": {
+                "type": "string"
+              },
+              "CODIGOMUNICIPIONATURALIDADE": {
+                "type": "string"
+              },
+              "NOMEMUNICIPIONATURALIDADE": {
+                "type": "string"
+              },
+              "UFNATURALIDADE": {
+                "type": "string"
+              },
+              "NOME_MUNICIPIO_ESTRANGEIRO": {
+                "type": "string"
+              },
+              "TIPO_DOC_OUTRO_DOC_IDENTIFICACAO": {
+                "type": "string"
+              },
+              "IDENTIFICADOR_OUTRO_DOC_IDENTIFICACAO": {
+                "type": "string"
+              },
+              "CPFNATURALIDADE": {
+                "type": "string"
+              },
+              "NUMERORG": {
+                "type": "string"
+              },
+              "UFRG": {
+                "type": "string"
+              },
+              "ORGAOEXPEDIDORRG": {
+                "type": "string"
+              },
+              "DATANASCIMENTORG": {
+                "type": "string",
+                "format": "date"
+              },
+              "NOMECURSODADOSCURSO": {
+                "type": "string"
+              },
+              "CODIGOCURSOEMECDADOSCURSO": {
+                "type": "string"
+              },
+              "HABILITACAO_DADOS_CURSO": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "NOMEHABILITACAO": { "type": "string"},
+                    "DATAHABILITACAO": { "type": "string", "format": "date" }
+                  }
+                }
               }
             }
           }
