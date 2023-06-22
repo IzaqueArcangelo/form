@@ -140,6 +140,102 @@
                                           ]
                                         }
                                       }
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/MODALIDADEDADOSCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/TITULOCONFERIDODADOSCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/GRAUCONFERIDODADOSCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/LOGRADOUROENDERECOCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/COMPLEMENTOENDERECOCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/BAIRROENDERECOCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMEROENDERECOCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CODIGOMUNICIPIOENDERECOCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMEMUNICIPIOENDERECOCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/UFENDERECOCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CEPENDERECOCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/TIPOAUTORIZACAO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMEROAUTORIZACAO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATAAUTORIZACAO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/VEICULO_PUB_AUTORIZACAO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATA_PUB_AUTORIZACAO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/SECAO_PUB_AUTORIZACAO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/PAGINA_PUB_AUTORIZACAO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUM_DOU_AUTORIZACAO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/TIPORECONHECIMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMERORECONHECIMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATARECONHECIMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATAPUBRECONHECIMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/VEICULO_PUB_RECONHECIMENTO"
                                     }
                                   ]
                                 }
