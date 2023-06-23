@@ -154,6 +154,9 @@
               "TIPORECONHECIMENTO": {
                 "type": "string"
               },
+              "NUMERORECONHECIMENTO": {
+                "type": "string"
+              },
               "DATARECONHECIMENTO": {
                 "type": "string",
                 "format": "date"
@@ -543,7 +546,23 @@
                   "DadosPrivadosDiplomado": { 
                     "type": "object",
                     "properties":{
-
+                      "Filiacao": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "Nome": { "type": "string"},
+                            "NomeSocial": { "type": "string" },
+                            "Sexo": { "enum": ["", "M", "F"] }
+                          }
+                        }
+                      },
+                      "HistoricoEscolar": {
+                        "type": "object",
+                        "properties": {
+                          "CodigoCurrilo": { "type": "string" }
+                        }
+                      }
                     }
                   },
                   "TermoResponsabilidadeEmissora": { 

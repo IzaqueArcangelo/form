@@ -12,6 +12,7 @@ import schemaForm from '../assets/form/schema.json';
 import form from './form';
 import { parsePhoneNumber } from 'libphonenumber-js';
 import { DateAdapter } from '@angular/material/core';
+//import  * as localize from 'ajv-i18n/localize/pt-BR';
 
 const departmentTester: Tester = and(
   schemaTypeIs('string'),
@@ -51,19 +52,38 @@ export class AppComponent {
   uischema = uischemaForm;
   schema = schemaForm;
   data = form;
-  i18n = {locale: 'de-DE'}
+  i18n = { locale: 'pt-BR' }
+  //i18n = { locale: 'de-DE' }
   dateAdapter;
   ajv = createAjv({
     schemaId: 'id',
-    allErrors: true
+    allErrors: false
   });
+
+
   constructor(dateAdapter: DateAdapter<Date>) {
+    const validate = this.ajv.compile(this.schema)
+    const valid = validate(this.data)
+    const localize = {
+      en: require('ajv-i18n/localize/en'),
+      pt: require('ajv-i18n/localize/pt-BR'),
+    }
+  
     this.ajv.addFormat('time', '^([0-1][0-9]|2[0-3]):[0-5][0-9]$');
     this.dateAdapter = dateAdapter;
     dateAdapter.setLocale(this.i18n.locale);
     this.ajv.addFormat('tel', maybePhoneNumber => {
       try {
-        parsePhoneNumber(maybePhoneNumber, 'DE');
+        //parsePhoneNumber(maybePhoneNumber, 'DE');
+        parsePhoneNumber(maybePhoneNumber, 'BR');
+
+        //tentando traduzir
+        if (!valid) {
+          // ru for Russian
+          localize.pt(validate.errors)
+          // string with all errors and data paths
+          console.log(this.ajv.errorsText(validate.errors, {separator: '\n'}))
+        }
         return true;
       } catch (_) {
         return false;

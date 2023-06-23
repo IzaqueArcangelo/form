@@ -10,6 +10,7 @@ import { DateAdapter } from '@angular/material/core';
     <p>Current locale: {{currentLocale}}</p>
     <button mat-raised-button color="primary" (click)="changeLocale('de-DE')">de-DE</button>
     <button mat-raised-button color="primary" (click)="changeLocale('en-US')">en-US</button>
+    <button mat-raised-button color="primary" (click)="changeLocale('pt-BR')">pt-BR</button>
   `
 })
 export class LangComponent extends JsonFormsControl {

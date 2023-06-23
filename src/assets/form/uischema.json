@@ -3,7 +3,7 @@
   "elements": [
     {
       "type": "Category",
-      "label": "Históricos",
+      "label": "Formulário",
       "elements": [
         {
           "type": "ListWithDetail",
@@ -54,19 +54,23 @@
                                   "elements": [
                                     {
                                       "type": "Control",
-                                      "scope": "#/properties/IDDIPLOMADO"
+                                      "scope": "#/properties/IDDIPLOMADO",
+                                      "label": "ID do Diplomado"
                                     },
                                     {
                                       "type": "Control",
-                                      "scope": "#/properties/NOMEDIPLOMADO"
+                                      "scope": "#/properties/NOMEDIPLOMADO",
+                                      "label": "Nome do Diplomado"
                                     },
                                     {
                                       "type": "Control",
-                                      "scope": "#/properties/NOME_SOCIAL_DIPLOMADO"
+                                      "scope": "#/properties/NOME_SOCIAL_DIPLOMADO",
+                                      "label": "Nome Social do Diplomado"
                                     },
                                     {
                                       "type": "Control",
-                                      "scope": "#/properties/SEXODIPLOMADO"
+                                      "scope": "#/properties/SEXODIPLOMADO",
+                                      "label": "Sexo do Diplomado"
                                     },
                                     {
                                       "type": "Control",
@@ -122,7 +126,7 @@
                                     },
                                     {
                                       "type": "Control",
-                                      "label": "HABILITACAO_DADOS_CURSO",
+                                      "label": "Habilitação dados Curso",
                                       "scope": "#/properties/HABILITACAO_DADOS_CURSO",
                                       "options":{
                                         "showSortButtons": true,
@@ -131,11 +135,13 @@
                                           "elements": [
                                             {
                                               "type": "Control",
-                                              "scope": "#/properties/NOMEHABILITACAO"
+                                              "scope": "#/properties/NOMEHABILITACAO",
+                                              "label": "Nome Habilitação"
                                             },
                                             {
                                               "type": "Control",
-                                              "scope": "#/properties/DATAHABILITACAO"
+                                              "scope": "#/properties/DATAHABILITACAO",
+                                              "label": "Data Habilitação"
                                             }
                                           ]
                                         }
@@ -236,6 +242,528 @@
                                     {
                                       "type": "Control",
                                       "scope": "#/properties/VEICULO_PUB_RECONHECIMENTO"
+                                    },
+                                    {
+                                      "type": "HorizontalLayout",
+                                      "elements": [
+                                        {
+                                          "type": "Control",
+                                          "scope": "#/properties/NUM_DOU_RECONHECIMENTO"
+                                        },
+                                        {
+                                          "type": "Control",
+                                          "scope": "#/properties/NUM_PROCESSO_TRAMITACAO_EMEC_RECONHECIMENTO"
+                                        },
+                                        {
+                                          "type": "Control",
+                                          "scope": "#/properties/DATA_CADASTRO_TRAMITACAO_EMEC_RECONHECIMENTO"
+                                        },
+                                        {
+                                          "type": "Control",
+                                          "scope": "#/properties/DATA_PROTOCOLO_TRAMITACAO_EMEC_RECONHECIMENTO"
+                                        },
+                                        {
+                                          "type": "Control",
+                                          "scope": "#/properties/TIPO_RENOVACAO_RECONHECIMENTO"
+                                        },
+                                        {
+                                          "type": "Control",
+                                          "scope": "#/properties/NUM_RENOVACAO_RECONHECIMENTO"
+                                        },
+                                        {
+                                          "type": "Control",
+                                          "scope": "#/properties/DATA_RENOVACAO_RECONHECIMENTO"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/VEICULO_PUB_RENOVACAO_RECONHECIMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATA_PUB_RENOVACAO_RECONHECIMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/SECAO_PUB_RENOVACAO_RECONHECIMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/PAG_PUB_RENOVACAO_RECONHECIMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUM_DOU_RENOVACAO_RECONHECIMENTO"
+                                    },{
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMEIESEMISSORA"
+                                    },{
+                                      "type": "Control",
+                                      "scope": "#/properties/CODIGOMECIESEMISSORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CNPJIESEMISSORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/LOGRADOUROENDERECO"
+                                    },{
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMEROENDERECO"
+                                    },{
+                                      "type": "Control",
+                                      "scope": "#/properties/BAIRROENDERECO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CODIGOMUNICIPIOENDERECO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMEMUNICIPIOENDERECO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/UFENDERECO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CEPENDERECO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/TIPOCREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMCREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATACREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATAPUBCREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/SECAOPUBCREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/PAGINAPUBCREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/VEICULO_PUB_CREDENCIAMENTO_IESEMISSORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUM_DOU_CREDENCIAMENTO_IESEMISSORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/TIPORECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMRECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATARECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATAPUBRECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/SECAOPUBRECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/PAGINAPUBRECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/VEICULO_PUB_RECREDENCIAMENTO_IESEMISSORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/RAZAOSOCIALMANTENEDORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CNPJMANTENEDORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/LOGRADOUROENDMANTENEDORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMEROENDMANTENEDORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/BAIRROENDMANTENEDORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CODIGOMUNICIPENDMANTENEDORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMEMUNICIPIOENDMANTENEDORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/UFENDMANTENEDORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CEPENDMANTENEDORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMEIESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CODIGOMECIESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CNPJIESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/LOGRADOURENDIESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMEROENDIESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/BAIRROENDIESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CODMUNENDIESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMEMUNENDIESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/UFENDIESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CEPENDIESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/TIPOCREDENCIAMENTOEND"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATACREDENCIAMENTOEND"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATAPUBCREDENCIAMENTOEND"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/SECAOPUBCREDENCIAMENTOEND"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/PAGINAPUBCREDENCIAMENTOEND"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/VEICULO_PUB_CREDENCIAMENTO_IESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUM_DOU_CREDENCIAMENTO_IESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/TIPORECREDENCIAMENTOCRED"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMRECREDENCIACREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATARECREDENCIACRED"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATAPUBRECREDENCIACRED"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/SECAOPUBRECREDENCIACRED"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/PAGINAPUBRECREDENCIACRED"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/VEICULO_PUB_RECREDENCIAMENTO_IESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUM_DOU_RECREDENCIAMENTO_IESREGISTRADORA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/RAZAOSOMANTRECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CNPJMANTRECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/LOGRENDMANTRECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMENDMANTRECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/BAIRENDMANTRECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CODMUNENDMANTRECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMEMURECRTIPO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMEMUENDMANTRECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/UFENDMANTRECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CEPENDMANTRECREDENCIAMENTO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/LIVROREGISTROLIVROREGISTRO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMFOLHADIPLOMALIVROREGISTRO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMSEQDIPLOMALIVROREGISTRO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/PROCESSODIPLOMALIVROREGISTRO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATACOLAGRAULIVROREGISTRO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATAEXPEDDIPLOMALIVROREGISTRO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATAREGDIPLOMALIVROREGISTRO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMERESPONSAVELREGISTRO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CPFRESPONSAVELREGISTRO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMRARESPONSAVELREGISTRO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/EMAIL"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CELULAR"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATACONCLUSAOCURSO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/LIVROREGISTROTERMOCOLACAO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/FOLHAREGISTROTERMOCOLACAO"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMREGISTROTERMOCOLACAO",
+                                      "label": "Número Registro Termo Locação"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/DATAREGISTROTERMOCOLACAO",
+                                      "label": "Data Registro Termolocação"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/SECAORECONHECIMENTO",
+                                      "label": "Seção reconhecimento"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/PAGINASECAORECONHECIMENTO",
+                                      "label": "Página Reconhecimento"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMEPOLO",
+                                      "label": "Nome Polo"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/LOGRADOUROENDERECOPOLO",
+                                      "label": "Logradouro do Polo"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NUMEROENDERECOPOLO",
+                                      "label": "N° Endereço do Polo"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/COMPLEMENTOENDERECOPOLO",
+                                      "label": "Complemento Endereço do Polo"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/BAIRROENDERECOPOLO",
+                                      "label": "Bairro do Polo"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/NOMEMUNICIPIOENDERECOPOLO",
+                                      "label": "Município do Polo"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/UFENDERECOPOLO",
+                                      "label": "UF do Polo"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CEPENDERECOPOLO",
+                                      "label": "CEP do Polo"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CODIGOEMECPOLO",
+                                      "label": "Código EMEC do Polo"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/CODIGOMUNICIPIOENDERECOPOLO",
+                                      "label": "Código Múnicipio do Polo"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/VIA2",
+                                      "label": "2ª VIA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/OBSERVACOES_SEGUNDA_VIA",
+                                      "label": "Obs 2ª VIA"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/TIPO_INSTITUICAO",
+                                      "label": "Tipo Instituição"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/TEXTO_MANTENEDORA",
+                                      "label": "Texto Mantenedora"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/TEXTO_APOSTILA",
+                                      "label": "Texto Apostila"
+                                    },
+                                    {
+                                      "type": "Group",
+                                      "label": "DocumentacaoAcademica",
+                                      "elements": [
+                                        {
+                                          "type": "Control",
+                                          "label": "Filiação",
+                                          "scope": "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/Filiacao",
+                                          "options":{
+                                            "showSortButtons": true,
+                                            "detail": {
+                                              "type": "VerticalLayout",
+                                              "elements": [
+                                                {
+                                                  "type": "Control",
+                                                  "scope": "#/properties/Nome",
+                                                  "label": "Nome do Genitor"
+                                                },
+                                                {
+                                                  "type": "Control",
+                                                  "scope": "#/properties/NomeSocial",
+                                                  "label": "Nome Social do Genitor"
+                                                },
+                                                {
+                                                  "type": "Control",
+                                                  "scope": "#/properties/Sexo",
+                                                  "label": "Sexo do Genitor"
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "type": "Control",
+                                          "scope": "#/properties/customer/properties/department"
+                                        },
+                                        {
+                                          "type": "Control",
+                                          "scope": "#/properties/customer/properties/emailAddress"
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
@@ -304,7 +832,7 @@
     },
     {
       "type": "Category",
-      "label": "Data",
+      "label": "Visualização",
       "elements": [
         {
           "type": "Label",
@@ -318,7 +846,7 @@
     },
     {
       "type": "Category",
-      "label": "Language",
+      "label": "Tradução",
       "elements": [
         {
           "type": "Label",
@@ -335,7 +863,7 @@
     },
     {
       "type": "Category",
-      "label": "Contracts",
+      "label": "Outros dados",
       "elements": [
         {
           "type": "Label",
