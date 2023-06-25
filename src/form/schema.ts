@@ -1214,12 +1214,24 @@ export default {
                                     items: {
                                       type: "object",
                                       properties: {
-                                        "HoraAula": { type: "string"},
-                                        "HoraRelogio": { type: "string" },
-                                        "Etiqueta": { type: "string" }
+                                        "Docente": { 
+                                          type: "object",
+                                          properties:{
+                                            "Nome": { type: "string"},
+                                            "Titulacao": { type: "string" },
+                                            "Lattes": { type: "string" },
+                                            "CPF": { type: "string" }
+                                          }
+                                        }
                                       }
                                     }
                                   }
+                                }
+                              },
+                              "AtividadeComplementar" : {
+                                type: "object",
+                                properties:{
+                                  "CodigoAtividadeComplementar": { type: "string"}
                                 }
                               }
                             }

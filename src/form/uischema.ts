@@ -828,9 +828,52 @@ export default {
                                                     }
                                                   ]
                                                 },
+                                                {
+                                                  type: "Control",
+                                                  label: "Docentes",
+                                                  scope: "#/properties/Disciplina/properties/Docentes",
+                                                  options:{
+                                                    showSortButtons: true,
+                                                    detail: {
+                                                      type: "VerticalLayout",
+                                                      elements: [
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/Docente/properties/Nome",
+                                                          label: "Nome"
+                                                        },
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/Docente/properties/Titulacao",
+                                                          label: "Titulacao"
+                                                        },
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/Docente/properties/Lattes",
+                                                          label: "Lattes"
+                                                        },
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/Docente/properties/CPF",
+                                                          label: "CPF"
+                                                        }
+                                                      ]
+                                                    }
+                                                  }
+                                                },
+                                              ]
+                                            },
+                                            {
+                                              type: "Group",
+                                              label: "Atividade Complementar",
+                                              elements: [
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/AtividadeComplementar/properties/CodigoAtividadeComplementar",
+                                                  label: "Código atividade complementar"
+                                                }
                                               ]
                                             }
-                                            
                                           ]
                                         }
                                       }
