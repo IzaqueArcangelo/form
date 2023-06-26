@@ -248,11 +248,7 @@ export default {
                                         }
                                     ]
                                 }
-                            },
-                            
-                            
-                           
-                         
+                            },                        
                             {
                                 "AtividadeComplementar":{
                                     "CodigoAtividadeComplementar":"",

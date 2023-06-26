@@ -871,12 +871,103 @@ export default {
                                                   type: "Control",
                                                   scope: "#/properties/AtividadeComplementar/properties/CodigoAtividadeComplementar",
                                                   label: "Código atividade complementar"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/AtividadeComplementar/properties/DataInicio",
+                                                  label: "Data Inicio"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/AtividadeComplementar/properties/DataFim",
+                                                  label: "Data Fim"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/AtividadeComplementar/properties/DataRegistro",
+                                                  label: "Data Registro"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/AtividadeComplementar/properties/TipoAtividadeComplementar",
+                                                  label: "Tipo Atividade Complementar"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/AtividadeComplementar/properties/Descricao",
+                                                  label: "Descrição"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  label: "Carga horaria em hora relogio",
+                                                  scope: "#/properties/AtividadeComplementar/properties/CargaHorariaEmHoraRelogio",
+                                                  options:{
+                                                    showSortButtons: true,
+                                                    detail: {
+                                                      type: "VerticalLayout",
+                                                      elements: [
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/HoraRelogio",
+                                                          label: "Hora Relógio"
+                                                        },
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/Etiqueta",
+                                                          label: "Etiqueta"
+                                                        }
+                                                      ]
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  type: "Group",
+                                                  label: "Docentes responsáveis pela validação",
+                                                  elements: [
+                                                    {
+                                                      type: "Control",
+                                                      scope: "#/properties/AtividadeComplementar/properties/DocentesResponsaveisPelaValidacao/properties/Docente",
+                                                      options:{
+                                                        showSortButtons: true,
+                                                        detail: {
+                                                          type: "VerticalLayout",
+                                                          elements: [
+                                                            {
+                                                              type: "Control",
+                                                              scope: "#/properties/Nome",
+                                                              label: "Nome Docente"
+                                                            },
+                                                            {
+                                                              type: "Control",
+                                                              scope: "#/properties/Titulacao",
+                                                              label: "Titulaçao"
+                                                            },
+                                                            {
+                                                              type: "Control",
+                                                              scope: "#/properties/Lattes",
+                                                              label: "Lattes"
+                                                            },
+                                                            {
+                                                              type: "Control",
+                                                              scope: "#/properties/CPF",
+                                                              label: "CPF"
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
                                                 }
                                               ]
                                             }
                                           ]
                                         }
                                       }
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/DataEmissaoHistorico",
+                                      label: "Data emissão histórico"
                                     }
                                   ]
                                 }

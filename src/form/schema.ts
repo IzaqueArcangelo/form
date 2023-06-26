@@ -74,7 +74,7 @@ export default {
                 },
                 "DATANASCIMENTORG": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "NOMECURSODADOSCURSO": {
                   type: "string"
@@ -88,7 +88,7 @@ export default {
                     type: "object",
                     properties: {
                       "NOMEHABILITACAO": { type: "string"},
-                      "DATAHABILITACAO": { type: "string", "format": "date" }
+                      "DATAHABILITACAO": { type: "string", format: "date" }
                     }
                   }
                 },
@@ -133,14 +133,14 @@ export default {
                 },
                 "DATAAUTORIZACAO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "VEICULO_PUB_AUTORIZACAO": {
                   type: "string"
                 },
                 "DATA_PUB_AUTORIZACAO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "SECAO_PUB_AUTORIZACAO": {
                   type: "string"
@@ -159,11 +159,11 @@ export default {
                 },
                 "DATARECONHECIMENTO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "DATAPUBRECONHECIMENTO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "VEICULO_PUB_RECONHECIMENTO": {
                   type: "string"
@@ -179,11 +179,11 @@ export default {
                 },
                 "DATA_CADASTRO_TRAMITACAO_EMEC_RECONHECIMENTO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "DATA_PROTOCOLO_TRAMITACAO_EMEC_RECONHECIMENTO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "TIPO_RENOVACAO_RECONHECIMENTO": {
                   type: "string"
@@ -193,14 +193,14 @@ export default {
                 },
                 "DATA_RENOVACAO_RECONHECIMENTO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "VEICULO_PUB_RENOVACAO_RECONHECIMENTO": {
                   type: "string"
                 },
                 "DATA_PUB_RENOVACAO_RECONHECIMENTO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "SECAO_PUB_RENOVACAO_RECONHECIMENTO": {
                   type: "string"
@@ -249,11 +249,11 @@ export default {
                 },
                 "DATACREDENCIAMENTO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "DATAPUBCREDENCIAMENTO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "SECAOPUBCREDENCIAMENTO": {
                   type: "string"
@@ -275,11 +275,11 @@ export default {
                 },
                 "DATARECREDENCIAMENTO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "DATAPUBRECREDENCIAMENTO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "SECAOPUBRECREDENCIAMENTO": {
                   type: "string"
@@ -355,11 +355,11 @@ export default {
                 },
                 "DATACREDENCIAMENTOEND": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "DATAPUBCREDENCIAMENTOEND": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "SECAOPUBCREDENCIAMENTOEND": {
                   type: "string"
@@ -381,11 +381,11 @@ export default {
                 },
                 "DATARECREDENCIACRED": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "DATAPUBRECREDENCIACRED": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "SECAOPUBRECREDENCIACRED": {
                   type: "string"
@@ -443,15 +443,15 @@ export default {
                 },
                 "DATACOLAGRAULIVROREGISTRO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "DATAEXPEDDIPLOMALIVROREGISTRO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "DATAREGDIPLOMALIVROREGISTRO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "NOMERESPONSAVELREGISTRO": {
                   type: "string"
@@ -464,14 +464,14 @@ export default {
                 },
                 "EMAIL": {
                   type: "string",
-                  "format": "email"
+                  format: "email"
                 },
                 "CELULAR": {
                   type: "string"
                 },
                 "DATACONCLUSAOCURSO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "LIVROREGISTROTERMOCOLACAO": {
                   type: "string"
@@ -484,7 +484,7 @@ export default {
                 },
                 "DATAREGISTROTERMOCOLACAO": {
                   type: "string",
-                  "format": "date"
+                  format: "date"
                 },
                 "SECAORECONHECIMENTO": {
                   type: "string"
@@ -693,7 +693,7 @@ export default {
             },
             "DATANASCIMENTORG": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "NOMECURSODADOSCURSO": {
               type: "string"
@@ -707,7 +707,7 @@ export default {
                 type: "object",
                 properties: {
                   "NOMEHABILITACAO": { type: "string"},
-                  "DATAHABILITACAO": { type: "string", "format": "date" }
+                  "DATAHABILITACAO": { type: "string", format: "date" }
                 }
               }
             },
@@ -752,14 +752,14 @@ export default {
             },
             "DATAAUTORIZACAO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "VEICULO_PUB_AUTORIZACAO": {
               type: "string"
             },
             "DATA_PUB_AUTORIZACAO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "SECAO_PUB_AUTORIZACAO": {
               type: "string"
@@ -778,11 +778,11 @@ export default {
             },
             "DATARECONHECIMENTO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "DATAPUBRECONHECIMENTO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "VEICULO_PUB_RECONHECIMENTO": {
               type: "string"
@@ -798,11 +798,11 @@ export default {
             },
             "DATA_CADASTRO_TRAMITACAO_EMEC_RECONHECIMENTO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "DATA_PROTOCOLO_TRAMITACAO_EMEC_RECONHECIMENTO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "TIPO_RENOVACAO_RECONHECIMENTO": {
               type: "string"
@@ -812,14 +812,14 @@ export default {
             },
             "DATA_RENOVACAO_RECONHECIMENTO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "VEICULO_PUB_RENOVACAO_RECONHECIMENTO": {
               type: "string"
             },
             "DATA_PUB_RENOVACAO_RECONHECIMENTO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "SECAO_PUB_RENOVACAO_RECONHECIMENTO": {
               type: "string"
@@ -868,11 +868,11 @@ export default {
             },
             "DATACREDENCIAMENTO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "DATAPUBCREDENCIAMENTO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "SECAOPUBCREDENCIAMENTO": {
               type: "string"
@@ -894,11 +894,11 @@ export default {
             },
             "DATARECREDENCIAMENTO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "DATAPUBRECREDENCIAMENTO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "SECAOPUBRECREDENCIAMENTO": {
               type: "string"
@@ -974,11 +974,11 @@ export default {
             },
             "DATACREDENCIAMENTOEND": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "DATAPUBCREDENCIAMENTOEND": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "SECAOPUBCREDENCIAMENTOEND": {
               type: "string"
@@ -1000,11 +1000,11 @@ export default {
             },
             "DATARECREDENCIACRED": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "DATAPUBRECREDENCIACRED": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "SECAOPUBRECREDENCIACRED": {
               type: "string"
@@ -1062,15 +1062,15 @@ export default {
             },
             "DATACOLAGRAULIVROREGISTRO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "DATAEXPEDDIPLOMALIVROREGISTRO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "DATAREGDIPLOMALIVROREGISTRO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "NOMERESPONSAVELREGISTRO": {
               type: "string"
@@ -1083,14 +1083,14 @@ export default {
             },
             "EMAIL": {
               type: "string",
-              "format": "email"
+              format: "email"
             },
             "CELULAR": {
               type: "string"
             },
             "DATACONCLUSAOCURSO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "LIVROREGISTROTERMOCOLACAO": {
               type: "string"
@@ -1103,7 +1103,7 @@ export default {
             },
             "DATAREGISTROTERMOCOLACAO": {
               type: "string",
-              "format": "date"
+              format: "date"
             },
             "SECAORECONHECIMENTO": {
               type: "string"
@@ -1231,12 +1231,45 @@ export default {
                               "AtividadeComplementar" : {
                                 type: "object",
                                 properties:{
-                                  "CodigoAtividadeComplementar": { type: "string"}
+                                  "CodigoAtividadeComplementar": { type: "string"},
+                                  "DataInicio": { type: "string" , format: "date" },
+                                  "DataFim": { type: "string" , format: "date" },
+                                  "DataRegistro": { type: "string" , format: "date" },
+                                  "TipoAtividadeComplementar": { type: "string"},
+                                  "Descricao": { type: "string"},
+                                  "CargaHorariaEmHoraRelogio" : {
+                                    type: "array",
+                                    items: {
+                                      type: "object",
+                                      properties: {
+                                        "HoraRelogio": { type: "string"},
+                                        "Etiqueta": { type: "string" }
+                                      }
+                                    }
+                                  },
+                                  "DocentesResponsaveisPelaValidacao" : {
+                                    type: "object",
+                                    properties: {
+                                      "Docente" : {
+                                        type: "array",
+                                        items: {
+                                          type: "object",
+                                          properties: {
+                                            "Nome": { type: "string"},
+                                            "Titulacao": { type: "string" },
+                                            "Lattes": { type: "string" },
+                                            "CPF": { type: "string" }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
                                 }
                               }
                             }
                           }
-                        }
+                        },
+                        "DataEmissaoHistorico": { type: "string", format: "date" }
                       }
                     }
                   }
