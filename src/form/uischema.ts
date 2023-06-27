@@ -1247,7 +1247,11 @@ export default {
                                   type: 'Group',
                                   label: 'Dados do Curso',
                                   elements: [
-                                    
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/NomeCurso",
+                                      label: "Nome curso"
+                                    }
                                   ]
                                 }
                               ]
