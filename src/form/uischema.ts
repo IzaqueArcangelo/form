@@ -1096,6 +1096,61 @@ export default {
                                           label: "Data Conclusão"
                                         }
                                       ]
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "TermoResponsabilidadeEmissora",
+                                      scope: "#/properties/DocumentacaoAcademica/properties/TermoResponsabilidadeEmissora",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/DocumentacaoAcademica/properties/TermoResponsabilidadeEmissora/properties/Nome",
+                                          label: "Nome"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/DocumentacaoAcademica/properties/TermoResponsabilidadeEmissora/properties/CPF",
+                                          label: "CPF"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/DocumentacaoAcademica/properties/TermoResponsabilidadeEmissora/properties/Cargo",
+                                          label: "Cargo"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/DocumentacaoAcademica/properties/TermoResponsabilidadeEmissora/properties/AtoDesignacao",
+                                          label: "Ato Designacao"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: "Control",
+                                      label: "Documentacao Comprobatoria",
+                                      scope: "#/properties/DocumentacaoAcademica/properties/DocumentacaoComprobatoria",
+                                      options:{
+                                        showSortButtons: true,
+                                        detail: {
+                                          type: "VerticalLayout",
+                                          elements: [
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/Documento/properties/tipo",
+                                              label: "Tipo"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/Documento/properties/observacoes",
+                                              label: "Observações"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/Documento/properties/base64",
+                                              label: "Base 64"
+                                            }
+                                          ]
+                                        }
+                                      }
                                     }
                                   ]
                                 }

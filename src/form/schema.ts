@@ -1331,13 +1331,26 @@ export default {
                 "TermoResponsabilidadeEmissora": { 
                   type: "object",
                   properties:{
-
+                    "Nome": { type: "string" },
+                    "CPF": { type: "string" },
+                    "Cargo": { type: "string" },
+                    "AtoDesignacao": { type: "string" }
                   }
                 },
                 "DocumentacaoComprobatoria": { 
-                  type: "object",
-                  properties:{
-
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      Documento : {
+                        type: "object",
+                        properties: {
+                          "tipo": { type: "string" },
+                          "observacoes": { type: "string" },
+                          "base64": { type: "string" }
+                        }
+                      }
+                    }
                   }
                 }
               }
