@@ -968,6 +968,95 @@ export default {
                                       type: "Control",
                                       scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/DataEmissaoHistorico",
                                       label: "Data emissão histórico"
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/SituacaoAluno",
+                                      label: "Situação do aluno"
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "Situação discente",
+                                      scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/SituacaoAtualDiscente",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/SituacaoAtualDiscente/properties/PeriodoLetivo",
+                                          label: "Periodo letivo"
+                                        },
+                                        {
+                                          type: "Group",
+                                          label: "Formado",
+                                          scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/SituacaoAtualDiscente/properties/Formado",
+                                          elements: [
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/SituacaoAtualDiscente/properties/Formado/properties/DataColacaoGrau",
+                                              label: "Data Colação Grau"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/SituacaoAtualDiscente/properties/Formado/properties/DataConclusaoCurso",
+                                              label: "Data Conclusão do Curso"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/SituacaoAtualDiscente/properties/Formado/properties/DataExpedicaoDiploma",
+                                              label: "Data Expedição Diploma"
+                                            },
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: "Control",
+                                      label: "ENADE",
+                                      scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/ENADE",
+                                      options:{
+                                        showSortButtons: true,
+                                        detail: {
+                                          type: "VerticalLayout",
+                                          elements: [
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/NaoHabilitado/properties/Condicao",
+                                              label: "Condição"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/NaoHabilitado/properties/Edicao",
+                                              label: "Edição"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/NaoHabilitado/properties/OutroMotivo",
+                                              label: "Outro Motivo"
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/DataProvaEnade",
+                                      label: "Data prova Enade"
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "Carga Horaria Curso Integralizada",
+                                      scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/CargaHorariaCursoIntegralizada",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/CargaHorariaCursoIntegralizada/properties/HoraAula",
+                                          label: "Hora Aula"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/CargaHorariaCursoIntegralizada/properties/HoraRelogio",
+                                          label: "Hora Relógio"
+                                        }
+                                      ]
                                     }
                                   ]
                                 }

@@ -1269,7 +1269,46 @@ export default {
                             }
                           }
                         },
-                        "DataEmissaoHistorico": { type: "string", format: "date" }
+                        "DataEmissaoHistorico": { type: "string", format: "date" },
+                        "SituacaoAluno": { type: "string" },
+                        "SituacaoAtualDiscente" : {
+                          type: "object",
+                          properties: {
+                            "PeriodoLetivo": { type: "string" },
+                            "Formado" : {
+                              type: "object",
+                              properties: {
+                                "DataColacaoGrau": { type: "string" , format: "date" },
+                                "DataConclusaoCurso": { type: "string", format: "date" },
+                                "DataExpedicaoDiploma": { type: "string",  format: "date" },
+                              }
+                            }
+                          }
+                        },
+                        "ENADE" : {
+                          type: "array",
+                          items: {
+                            type: "object",
+                            properties: {
+                              "NaoHabilitado" : {
+                                type: "object",
+                                properties: {
+                                  "Condicao": { type: "string" },
+                                  "Edicao": { type: "string" },
+                                  "OutroMotivo": { type: "string" }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "DataProvaEnade": { type: "string" , format: "date" },
+                        "CargaHorariaCursoIntegralizada" : {
+                          type: "object",
+                          properties: {
+                            "HoraAula": { type: "string" },
+                            "HoraRelogio": { type: "string" },
+                          }
+                        }
                       }
                     }
                   }
