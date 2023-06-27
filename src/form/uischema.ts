@@ -1298,7 +1298,7 @@ export default {
                                                 {
                                                   type: "Control",
                                                   scope: "#/properties/DataHabilitacao",
-                                                  label: "Data Habilitacao"
+                                                  label: "Data Habilitacao" 
                                                 }
                                               ]
                                             }
