@@ -1383,7 +1383,7 @@ export default {
                       }
                     },
                     "CPF": { type: "string" },
-                    "DataNascimento": { type: "string", formt: "date" },
+                    "DataNascimento": { type: "string", format: "date" },
                   }
                 },
                 "DadosCurso": { 
@@ -1396,8 +1396,8 @@ export default {
                       properties:{
                         "NumeroProcesso": { type: "string" },
                         "TipoProcesso": { type: "string" },
-                        "DataCadastro": { type: "string", formt: "date" },
-                        "DataProtocolo": { type: "string", formt: "date" }
+                        "DataCadastro": { type: "string", format: "date" },
+                        "DataProtocolo": { type: "string", format: "date" }
                       }
                     },
                     "Habilitacao": { 
@@ -1409,7 +1409,7 @@ export default {
                             type: "object",
                             properties: {
                               "NomeHabilitacao": { type: "string" },
-                              "DataHabilitacao": { type: "string", formt: "date" }
+                              "DataHabilitacao": { type: "string", format: "date" }
                             }
                           }
                         }
@@ -1427,9 +1427,9 @@ export default {
                       properties:{
                         "Tipo": { type: "string" },
                         "Numero": { type: "string" },
-                        "Data": { type: "string", formt: "date" },
+                        "Data": { type: "string", format: "date" },
                         "VeiculoPublicacao": { type: "string" },
-                        "DataPublicacao": { type: "string", formt: "date" },
+                        "DataPublicacao": { type: "string", format: "date" },
                         "SecaoPublicacao": { type: "string" },
                         "PaginaPublicacao": { type: "string" },
                         "NumeroDOU": { type: "string" },
@@ -1438,8 +1438,8 @@ export default {
                           properties:{
                             "NumeroProcesso": { type: "string" },
                             "TipoProcesso": { type: "string" },
-                            "DataCadastro": { type: "string", formt: "date" },
-                            "DataProtocolo": { type: "string", formt: "date" }
+                            "DataCadastro": { type: "string", format: "date" },
+                            "DataProtocolo": { type: "string", format: "date" }
                           }
                         }
                       }
@@ -1449,9 +1449,9 @@ export default {
                       properties:{
                         "Tipo": { type: "string" },
                         "Numero": { type: "string" },
-                        "Data": { type: "string", formt: "date" },
+                        "Data": { type: "string", format: "date" },
                         "VeiculoPublicacao": { type: "string" },
-                        "DataPublicacao": { type: "string", formt: "date" },
+                        "DataPublicacao": { type: "string", format: "date" },
                         "SecaoPublicacao": { type: "string" },
                         "PaginaPublicacao": { type: "string" },
                         "NumeroDOU": { type: "string" },
@@ -1460,8 +1460,8 @@ export default {
                           properties:{
                             "NumeroProcesso": { type: "string" },
                             "TipoProcesso": { type: "string" },
-                            "DataCadastro": { type: "string", formt: "date" },
-                            "DataProtocolo": { type: "string", formt: "date" }
+                            "DataCadastro": { type: "string", format: "date" },
+                            "DataProtocolo": { type: "string", format: "date" }
                           }
                         }
                       }
@@ -1471,9 +1471,9 @@ export default {
                       properties:{
                         "Tipo": { type: "string" },
                         "Numero": { type: "string" },
-                        "Data": { type: "string", formt: "date" },
+                        "Data": { type: "string", format: "date" },
                         "VeiculoPublicacao": { type: "string" },
-                        "DataPublicacao": { type: "string", formt: "date" },
+                        "DataPublicacao": { type: "string", format: "date" },
                         "SecaoPublicacao": { type: "string" },
                         "PaginaPublicacao": { type: "string" },
                         "NumeroDOU": { type: "string" },
@@ -1482,8 +1482,8 @@ export default {
                           properties:{
                             "NumeroProcesso": { type: "string" },
                             "TipoProcesso": { type: "string" },
-                            "DataCadastro": { type: "string", formt: "date" },
-                            "DataProtocolo": { type: "string", formt: "date" }
+                            "DataCadastro": { type: "string", format: "date" },
+                            "DataProtocolo": { type: "string", format: "date" }
                           }
                         }
                       }

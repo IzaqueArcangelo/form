@@ -1265,6 +1265,21 @@ export default {
                                           type: "Control",
                                           scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/SemCodigoCursoEMEC/properties/NumeroProcesso",
                                           label: "Numero processo"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/SemCodigoCursoEMEC/properties/TipoProcesso",
+                                          label: "Tipo processo"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/SemCodigoCursoEMEC/properties/DataCadastro",
+                                          label: "Data Cadastro"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/SemCodigoCursoEMEC/properties/DataProtocolo",
+                                          label: "Data Protocolo"
                                         }
                                       ]
                                     }
