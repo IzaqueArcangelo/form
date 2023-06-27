@@ -1655,6 +1655,150 @@ export default {
                                           label: "Numero DOU"
                                         }
                                       ]
+                                    },
+                                    {
+                                      type: 'Group',
+                                      label: 'Recredenciamento',
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Recredenciamento/properties/Tipo",
+                                          label: "Tipo"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Recredenciamento/properties/Numero",
+                                          label: "Número"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Recredenciamento/properties/Data",
+                                          label: "Data"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Recredenciamento/properties/VeiculoPublicacao",
+                                          label: "Veiculo publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Recredenciamento/properties/DataPublicacao",
+                                          label: "Data publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Recredenciamento/properties/SecaoPublicacao",
+                                          label: "Secao publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Recredenciamento/properties/PaginaPublicacao",
+                                          label: "Página publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Recredenciamento/properties/NumeroDOU",
+                                          label: "Numero DOU"
+                                        },
+                                        {
+                                          type: "Group",
+                                          label: "Informações Tramitação EMEC",
+                                          elements: [
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Recredenciamento/properties/InformacoesTramitacaoEMEC/properties/NumeroProcesso",
+                                              label: "Número Processo"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Recredenciamento/properties/InformacoesTramitacaoEMEC/properties/TipoProcesso",
+                                              label: "Tipo Processo"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Recredenciamento/properties/InformacoesTramitacaoEMEC/properties/DataCadastro",
+                                              label: "Data Cadastro"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Recredenciamento/properties/InformacoesTramitacaoEMEC/properties/DataCadastro",
+                                              label: "Data Protocolo"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: 'Group',
+                                      label: 'Renovação de Recredenciamento',
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/RenovacaoDeRecredenciamento/properties/Tipo",
+                                          label: "Tipo"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/RenovacaoDeRecredenciamento/properties/Numero",
+                                          label: "Número"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/RenovacaoDeRecredenciamento/properties/Data",
+                                          label: "Data"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/RenovacaoDeRecredenciamento/properties/VeiculoPublicacao",
+                                          label: "Veiculo publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/RenovacaoDeRecredenciamento/properties/DataPublicacao",
+                                          label: "Data publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/RenovacaoDeRecredenciamento/properties/SecaoPublicacao",
+                                          label: "Secao publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/RenovacaoDeRecredenciamento/properties/PaginaPublicacao",
+                                          label: "Página publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/RenovacaoDeRecredenciamento/properties/NumeroDOU",
+                                          label: "Numero DOU"
+                                        },
+                                        {
+                                          type: "Group",
+                                          label: "Informações Tramitação EMEC",
+                                          elements: [
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/RenovacaoDeRecredenciamento/properties/InformacoesTramitacaoEMEC/properties/NumeroProcesso",
+                                              label: "Número Processo"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/RenovacaoDeRecredenciamento/properties/InformacoesTramitacaoEMEC/properties/TipoProcesso",
+                                              label: "Tipo Processo"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/RenovacaoDeRecredenciamento/properties/InformacoesTramitacaoEMEC/properties/DataCadastro",
+                                              label: "Data Cadastro"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/RenovacaoDeRecredenciamento/properties/InformacoesTramitacaoEMEC/properties/DataCadastro",
+                                              label: "Data Protocolo"
+                                            }
+                                          ]
+                                        }
+                                      ]
                                     }
                                   ]
                                 }

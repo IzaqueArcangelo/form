@@ -1544,7 +1544,7 @@ export default {
                         }
                       }
                     },
-                    "RenovacaoDeCredenciamento": {
+                    "RenovacaoDeRecredenciamento": {
                       type: "object", 
                       properties:{
                         "Tipo": { type: "string" },
