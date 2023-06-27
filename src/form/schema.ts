@@ -1308,6 +1308,21 @@ export default {
                             "HoraAula": { type: "string" },
                             "HoraRelogio": { type: "string" },
                           }
+                        },
+                        "CargaHorariaCurso" : {
+                          type: "object",
+                          properties: {
+                            "HoraAula": { type: "string" },
+                            "HoraRelogio": { type: "string" },
+                          }
+                        },
+                        "IngressoCurso" : {
+                          type: "object",
+                          properties: {
+                            "Data": { type: "string" , format: "date" },
+                            "FormaIngresso": { type: "string" },
+                            "DataConclusao": { type: "string", format: "date" },
+                          }
                         }
                       }
                     }

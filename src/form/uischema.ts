@@ -1057,6 +1057,45 @@ export default {
                                           label: "Hora Relógio"
                                         }
                                       ]
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "Carga Horaria Curso",
+                                      scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/CargaHorariaCurso",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/CargaHorariaCurso/properties/HoraAula",
+                                          label: "Hora Aula"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/CargaHorariaCurso/properties/HoraRelogio",
+                                          label: "Hora Relógio"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "Carga Horaria Curso",
+                                      scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/IngressoCurso",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/IngressoCurso/properties/Data",
+                                          label: "Data"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/IngressoCurso/properties/FormaIngresso",
+                                          label: "Forma Ingresso"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/DocumentacaoAcademica/properties/DadosPrivadosDiplomado/properties/HistoricoEscolar/properties/IngressoCurso/properties/DataConclusao",
+                                          label: "Data Conclusão"
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
