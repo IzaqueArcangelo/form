@@ -1248,7 +1248,6 @@ export default {
                                   label: 'Dados do Curso',
                                   elements: [
                                     
-                                   
                                   ]
                                 }
                               ]
