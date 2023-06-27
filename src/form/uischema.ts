@@ -1280,6 +1280,29 @@ export default {
                                           type: "Control",
                                           scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/SemCodigoCursoEMEC/properties/DataProtocolo",
                                           label: "Data Protocolo"
+                                        },
+                                        {
+                                          type: "Control",
+                                          label: "Habilitacao",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Habilitacao",
+                                          options:{
+                                            showSortButtons: true,
+                                            detail: {
+                                              type: "VerticalLayout",
+                                              elements: [
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/NomeHabilitacao",
+                                                  label: "Nome habilitacao"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/DataHabilitacao",
+                                                  label: "Data Habilitacao"
+                                                }
+                                              ]
+                                            }
+                                          }
                                         }
                                       ]
                                     }
