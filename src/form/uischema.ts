@@ -1155,8 +1155,104 @@ export default {
                                   ]
                                 }
                               ]
+                            },
+                            {
+                              type: 'Group',
+                              label: 'Historico Escolar',
+                              elements: [
+                                {
+                                  type: 'Group',
+                                  label: 'Aluno',
+                                  elements: [
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/Aluno/properties/ID",
+                                      label: "ID"
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/Aluno/properties/Nome",
+                                      label: "Nome"
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/Aluno/properties/NomeSocial",
+                                      label: "Nome Social"
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/Aluno/properties/Sexo",
+                                      label: "Sexo"
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/Aluno/properties/Nacionalidade",
+                                      label: "Nacionalidade"
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "Naturalidade",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/Aluno/properties/Naturalidade/properties/CodigoMunicipio",
+                                          label: "Código Município"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/Aluno/properties/Naturalidade/properties/NomeMunicipio",
+                                          label: "Nome Município"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/Aluno/properties/Naturalidade/properties/UF",
+                                          label: "UF"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/Aluno/properties/CPF",
+                                      label: "CPF"
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "RG",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/Aluno/properties/RG/properties/Numero",
+                                          label: "Número"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/Aluno/properties/RG/properties/UF",
+                                          label: "UF"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/Aluno/properties/RG/properties/OrgaoExpedidor",
+                                          label: "Orgão Expedidor"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/Aluno/properties/DataNascimento",
+                                      label: "Data Nascimento"
+                                    }
+                                  ]
+                                },
+                                {
+                                  type: 'Group',
+                                  label: 'Dados do Curso',
+                                  elements: [
+                                    
+                                   
+                                  ]
+                                }
+                              ]
                             }
-                            
                           ]
                         }
                       ]

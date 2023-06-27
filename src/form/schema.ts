@@ -1361,13 +1361,133 @@ export default {
                 "Aluno": { 
                   type: "object",
                   properties:{
-
+                    "ID": { type: "string" },
+                    "Nome": { type: "string" },
+                    "NomeSocial": { type: "string" },
+                    "Sexo": { type: "string" },
+                    "Nacionalidade": { type: "string" },
+                    "Naturalidade": { 
+                      type: "object",
+                      properties:{
+                        "CodigoMunicipio": { type: "string" },
+                        "NomeMunicipio": { type: "string" },
+                        "UF": { type: "string" },
+                      }
+                    },
+                    "RG": { 
+                      type: "object",
+                      properties:{
+                        "Numero": { type: "string" },
+                        "UF": { type: "string" },
+                        "OrgaoExpedidor": { type: "string" }
+                      }
+                    },
+                    "CPF": { type: "string" },
+                    "DataNascimento": { type: "string", formt: "date" },
                   }
                 },
                 "DadosCurso": { 
                   type: "object",
                   properties:{
-
+                    "NomeCurso": { type: "string" },
+                    "CodigoCursoEMEC": { type: "string" },
+                    "SemCodigoCursoEMEC": { 
+                      type: "object",
+                      properties:{
+                        "NumeroProcesso": { type: "string" },
+                        "TipoProcesso": { type: "string" },
+                        "DataCadastro": { type: "string", formt: "date" },
+                        "DataProtocolo": { type: "string", formt: "date" }
+                      }
+                    },
+                    "Habilitacao": { 
+                      type: "array",
+                      items: {
+                        type: "object",
+                        properties: {
+                          Habilitacao : {
+                            type: "object",
+                            properties: {
+                              "NomeHabilitacao": { type: "string" },
+                              "DataHabilitacao": { type: "string", formt: "date" }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "TituloConferido": { 
+                      type: "object",
+                      properties:{
+                        "Titulo": { type: "string" }
+                      }
+                    },
+                    "CargaHorariaExigidaAtividadeComplementar": { type: "string" },
+                    "Autorizacao": { 
+                      type: "object",
+                      properties:{
+                        "Tipo": { type: "string" },
+                        "Numero": { type: "string" },
+                        "Data": { type: "string", formt: "date" },
+                        "VeiculoPublicacao": { type: "string" },
+                        "DataPublicacao": { type: "string", formt: "date" },
+                        "SecaoPublicacao": { type: "string" },
+                        "PaginaPublicacao": { type: "string" },
+                        "NumeroDOU": { type: "string" },
+                        "InformacoesTramitacaoEMEC": { 
+                          type: "object",
+                          properties:{
+                            "NumeroProcesso": { type: "string" },
+                            "TipoProcesso": { type: "string" },
+                            "DataCadastro": { type: "string", formt: "date" },
+                            "DataProtocolo": { type: "string", formt: "date" }
+                          }
+                        }
+                      }
+                    },
+                    "Reconhecimento": { 
+                      type: "object",
+                      properties:{
+                        "Tipo": { type: "string" },
+                        "Numero": { type: "string" },
+                        "Data": { type: "string", formt: "date" },
+                        "VeiculoPublicacao": { type: "string" },
+                        "DataPublicacao": { type: "string", formt: "date" },
+                        "SecaoPublicacao": { type: "string" },
+                        "PaginaPublicacao": { type: "string" },
+                        "NumeroDOU": { type: "string" },
+                        "InformacoesTramitacaoEMEC": { 
+                          type: "object",
+                          properties:{
+                            "NumeroProcesso": { type: "string" },
+                            "TipoProcesso": { type: "string" },
+                            "DataCadastro": { type: "string", formt: "date" },
+                            "DataProtocolo": { type: "string", formt: "date" }
+                          }
+                        }
+                      }
+                    },
+                    "RenovacaoReconhecimento": { 
+                      type: "object",
+                      properties:{
+                        "Tipo": { type: "string" },
+                        "Numero": { type: "string" },
+                        "Data": { type: "string", formt: "date" },
+                        "VeiculoPublicacao": { type: "string" },
+                        "DataPublicacao": { type: "string", formt: "date" },
+                        "SecaoPublicacao": { type: "string" },
+                        "PaginaPublicacao": { type: "string" },
+                        "NumeroDOU": { type: "string" },
+                        "InformacoesTramitacaoEMEC": { 
+                          type: "object",
+                          properties:{
+                            "NumeroProcesso": { type: "string" },
+                            "TipoProcesso": { type: "string" },
+                            "DataCadastro": { type: "string", formt: "date" },
+                            "DataProtocolo": { type: "string", formt: "date" }
+                          }
+                        }
+                      }
+                    },
                   }
                 },
                 "lesEmissora": { 
