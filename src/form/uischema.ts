@@ -6,19 +6,28 @@ export default {
       label: "Formulário",
       elements: [
         {
-          type: "HorizontalLayout",
+          type: 'Group',
           elements: [
             {
-              type: "Control",
-              scope: "#/properties/lote"
-            },
-            {
-              type: "Control",
-              scope: "#/properties/descricaoLote"
-            },
-            {
-              type: "Control",
-              scope: "#/properties/design"
+              type: "HorizontalLayout",
+              elements: [
+                {
+                  type: "Control",
+                  scope: "#/properties/lote"
+                },
+                {
+                  type: "Control",
+                  scope: "#/properties/descricaoLote"
+                },
+                {
+                  type: "Control",
+                  scope: "#/properties/design"
+                },
+                {
+                  type: "Control",
+                  scope: "#/properties/2via"
+                }
+              ]
             }
           ]
         },
@@ -28,10 +37,6 @@ export default {
             {
               type: "VerticalLayout",
               elements: [
-                {
-                  type: "Control",
-                  scope: "#/properties/2via"
-                },
                 {
                   type: "Control",
                   label: "Diplomas",
@@ -1280,29 +1285,374 @@ export default {
                                           type: "Control",
                                           scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/SemCodigoCursoEMEC/properties/DataProtocolo",
                                           label: "Data Protocolo"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: "Control",
+                                      label: "Habilitacao",
+                                      scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Habilitacao",
+                                      options:{
+                                        showSortButtons: true,
+                                        detail: {
+                                          type: "VerticalLayout",
+                                          elements: [
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/Habilitacao/properties/NomeHabilitacao",
+                                              label: "Nome habilitacao"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/Habilitacao/properties/DataHabilitacao",
+                                              label: "Data Habilitacao" 
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "TituloConferido",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/TituloConferido/properties/Titulo",
+                                          label: "Título"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/CargaHorariaExigidaAtividadeComplementar",
+                                      label: "Carga Horaria Exigida Atividade Complementar"
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "Autorização",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Autorizacao/properties/Tipo",
+                                          label: "Tipo"
                                         },
                                         {
                                           type: "Control",
-                                          label: "Habilitacao",
-                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Habilitacao",
-                                          options:{
-                                            showSortButtons: true,
-                                            detail: {
-                                              type: "VerticalLayout",
-                                              elements: [
-                                                {
-                                                  type: "Control",
-                                                  scope: "#/properties/NomeHabilitacao",
-                                                  label: "Nome habilitacao"
-                                                },
-                                                {
-                                                  type: "Control",
-                                                  scope: "#/properties/DataHabilitacao",
-                                                  label: "Data Habilitacao" 
-                                                }
-                                              ]
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Autorizacao/properties/Numero",
+                                          label: "Número"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Autorizacao/properties/Data",
+                                          label: "Data"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Autorizacao/properties/VeiculoPublicacao",
+                                          label: "Veículo publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Autorizacao/properties/DataPublicacao",
+                                          label: "Data publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Autorizacao/properties/SecaoPublicacao",
+                                          label: "Seção Publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Autorizacao/properties/PaginaPublicacao",
+                                          label: "Página Publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Autorizacao/properties/NumeroDOU",
+                                          label: "Número DOU"
+                                        },
+                                        {
+                                          type: "Group",
+                                          label: "Informações Tramitação EMEC",
+                                          elements: [
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Autorizacao/properties/InformacoesTramitacaoEMEC/properties/NumeroProcesso",
+                                              label: "Número Processo"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Autorizacao/properties/InformacoesTramitacaoEMEC/properties/TipoProcesso",
+                                              label: "Tipo Processo"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Autorizacao/properties/InformacoesTramitacaoEMEC/properties/DataCadastro",
+                                              label: "Data Cadastro"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Autorizacao/properties/InformacoesTramitacaoEMEC/properties/DataCadastro",
+                                              label: "Data Protocolo"
                                             }
-                                          }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "Reconhecimento",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Reconhecimento/properties/Tipo",
+                                          label: "Tipo"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Reconhecimento/properties/Numero",
+                                          label: "Número"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Reconhecimento/properties/Data",
+                                          label: "Data"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Reconhecimento/properties/VeiculoPublicacao",
+                                          label: "Veículo publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Reconhecimento/properties/DataPublicacao",
+                                          label: "Data publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Reconhecimento/properties/SecaoPublicacao",
+                                          label: "Seção Publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Reconhecimento/properties/PaginaPublicacao",
+                                          label: "Página Publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Reconhecimento/properties/NumeroDOU",
+                                          label: "Número DOU"
+                                        },
+                                        {
+                                          type: "Group",
+                                          label: "Informações Tramitação EMEC",
+                                          elements: [
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Reconhecimento/properties/InformacoesTramitacaoEMEC/properties/NumeroProcesso",
+                                              label: "Número Processo"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Reconhecimento/properties/InformacoesTramitacaoEMEC/properties/TipoProcesso",
+                                              label: "Tipo Processo"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Reconhecimento/properties/InformacoesTramitacaoEMEC/properties/DataCadastro",
+                                              label: "Data Cadastro"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/Reconhecimento/properties/InformacoesTramitacaoEMEC/properties/DataCadastro",
+                                              label: "Data Protocolo"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "Renovação reconhecimento",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/RenovacaoReconhecimento/properties/Tipo",
+                                          label: "Tipo"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/RenovacaoReconhecimento/properties/Numero",
+                                          label: "Número"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/RenovacaoReconhecimento/properties/Data",
+                                          label: "Data"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/RenovacaoReconhecimento/properties/VeiculoPublicacao",
+                                          label: "Veículo publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/RenovacaoReconhecimento/properties/DataPublicacao",
+                                          label: "Data publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/RenovacaoReconhecimento/properties/SecaoPublicacao",
+                                          label: "Seção Publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/RenovacaoReconhecimento/properties/PaginaPublicacao",
+                                          label: "Página Publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/RenovacaoReconhecimento/properties/NumeroDOU",
+                                          label: "Número DOU"
+                                        },
+                                        {
+                                          type: "Group",
+                                          label: "Informações Tramitação EMEC",
+                                          elements: [
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/RenovacaoReconhecimento/properties/InformacoesTramitacaoEMEC/properties/NumeroProcesso",
+                                              label: "Número Processo"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/RenovacaoReconhecimento/properties/InformacoesTramitacaoEMEC/properties/TipoProcesso",
+                                              label: "Tipo Processo"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/RenovacaoReconhecimento/properties/InformacoesTramitacaoEMEC/properties/DataCadastro",
+                                              label: "Data Cadastro"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/RenovacaoReconhecimento/properties/InformacoesTramitacaoEMEC/properties/DataCadastro",
+                                              label: "Data Protocolo"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  type: 'Group',
+                                  label: 'LesEmissora',
+                                  elements: [
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Nome",
+                                      label: "Nome"
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/CodigoMEC",
+                                      label: "Codigo MEC"
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/CNPJ",
+                                      label: "CNPJ"
+                                    },
+                                    {
+                                      type: 'Group',
+                                      label: 'Endereço',
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Endereco/properties/Logradouro",
+                                          label: "Logradouro"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Endereco/properties/Numero",
+                                          label: "Número"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Endereco/properties/Complemento",
+                                          label: "Complemento"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Endereco/properties/Bairro",
+                                          label: "Bairro"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Endereco/properties/CodigoMunicipio",
+                                          label: "Código Município"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Endereco/properties/NomeMunicipio",
+                                          label: "Nome Município"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Endereco/properties/UF",
+                                          label: "UF Município"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Endereco/properties/CEP",
+                                          label: "CEP"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: 'Group',
+                                      label: 'Credenciamento',
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Credenciamento/properties/Tipo",
+                                          label: "Tipo"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Credenciamento/properties/Numero",
+                                          label: "Número"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Credenciamento/properties/Data",
+                                          label: "Data"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Credenciamento/properties/VeiculoPublicacao",
+                                          label: "Veiculo publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Credenciamento/properties/DataPublicacao",
+                                          label: "Data publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Credenciamento/properties/SecaoPublicacao",
+                                          label: "Secao publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Credenciamento/properties/PaginaPublicacao",
+                                          label: "Página publicação"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Credenciamento/properties/NumeroDOU",
+                                          label: "Numero DOU"
                                         }
                                       ]
                                     }

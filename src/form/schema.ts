@@ -1493,7 +1493,106 @@ export default {
                 "lesEmissora": { 
                   type: "object",
                   properties:{
-
+                    "Nome": { type: "string" },
+                    "CodigoMEC": { type: "string" },
+                    "CNPJ": { type: "string" },
+                    "Endereco": { 
+                      type: "object",
+                      properties:{
+                        "Logradouro": { type: "string" },
+                        "Numero": { type: "string" },
+                        "Complemento": { type: "string" },
+                        "Bairro": { type: "string" },
+                        "CodigoMunicipio": { type: "string" },
+                        "NomeMunicipio": { type: "string" },
+                        "UF": { type: "string" },
+                        "CEP": { type: "string" },
+                      }
+                    },
+                    "Credenciamento": {
+                      type: "object", 
+                      properties:{
+                        "Tipo": { type: "string" },
+                        "Numero": { type: "string" },
+                        "Data": { type: "string", format: "date" },
+                        "VeiculoPublicacao": { type: "string" },
+                        "DataPublicacao": { type: "string", format: "date" },
+                        "SecaoPublicacao": { type: "string" },
+                        "PaginaPublicacao": { type: "string" },
+                        "NumeroDOU": { type: "string" }
+                      }
+                    },
+                    "Recredenciamento": {
+                      type: "object", 
+                      properties:{
+                        "Tipo": { type: "string" },
+                        "Numero": { type: "string" },
+                        "Data": { type: "string", format: "date" },
+                        "VeiculoPublicacao": { type: "string" },
+                        "DataPublicacao": { type: "string", format: "date" },
+                        "SecaoPublicacao": { type: "string" },
+                        "PaginaPublicacao": { type: "string" },
+                        "NumeroDOU": { type: "string" },
+                        "InformacoesTramitacaoEMEC": { 
+                          type: "object",
+                          properties:{
+                            "NumeroProcesso": { type: "string" },
+                            "TipoProcesso": { type: "string" },
+                            "DataCadastro": { type: "string", format: "date" },
+                            "DataProtocolo": { type: "string", format: "date" }
+                          }
+                        }
+                      }
+                    },
+                    "RenovacaoDeCredenciamento": {
+                      type: "object", 
+                      properties:{
+                        "Tipo": { type: "string" },
+                        "Numero": { type: "string" },
+                        "Data": { type: "string", format: "date" },
+                        "VeiculoPublicacao": { type: "string" },
+                        "DataPublicacao": { type: "string", format: "date" },
+                        "SecaoPublicacao": { type: "string" },
+                        "PaginaPublicacao": { type: "string" },
+                        "NumeroDOU": { type: "string" },
+                        "InformacoesTramitacaoEMEC": { 
+                          type: "object",
+                          properties:{
+                            "NumeroProcesso": { type: "string" },
+                            "TipoProcesso": { type: "string" },
+                            "DataCadastro": { type: "string", format: "date" },
+                            "DataProtocolo": { type: "string", format: "date" }
+                          }
+                        }
+                      }
+                    },
+                    "Mantenedora": {
+                      type: "object", 
+                      properties:{
+                        "RazaoSocial": { type: "string" },
+                        "CNPJ": { type: "string" },
+                        "Endereco": { 
+                          type: "object",
+                          properties:{
+                            "Logradouro": { type: "string" },
+                            "Numero": { type: "string" },
+                            "Complemento": { type: "string" },
+                            "Bairro": { type: "string" },
+                            "CodigoMunicipio": { type: "string" },
+                            "NomeMunicipio": { type: "string" },
+                            "UF": { type: "string" },
+                            "CEP": { type: "string" },
+                          }
+                        },
+                        "NomeMunicipiolesEmissora": { type: "string" },
+                        "UFlesEmissora": { type: "string" },
+                        "AutorizacaolesEmissora": { type: "string" },
+                        "CredenciamentolesEmissora": { type: "string" },
+                        "ResponsavelHistorico": { type: "string" },
+                        "CargoResponsavelHistorico": { type: "string" },
+                        "Observacao": { type: "string" },
+                      }
+                    }
                   }
                 },
                 "HistoricoEscolar": { 
