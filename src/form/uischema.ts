@@ -1251,6 +1251,22 @@ export default {
                                       type: "Control",
                                       scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/NomeCurso",
                                       label: "Nome curso"
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/CodigoCursoEMEC",
+                                      label: "Código curso EMEC"
+                                    },
+                                    {
+                                      type: 'Group',
+                                      label: 'Sem Código Curso EMEC',
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/DadosCurso/properties/SemCodigoCursoEMEC/properties/NumeroProcesso",
+                                          label: "Numero processo"
+                                        }
+                                      ]
                                     }
                                   ]
                                 }
