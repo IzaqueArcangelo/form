@@ -1595,10 +1595,154 @@ export default {
                     }
                   }
                 },
-                "HistoricoEscolar": { 
+                "HistoricoEscolar": {
                   type: "object",
-                  properties:{
-
+                  properties: {
+                    "CodigoCurrilo": { type: "string" },
+                    "ElementosHistorico": {
+                      type: "array",
+                      items: {
+                        type: "object",
+                        properties: {
+                          "Disciplina": { 
+                            type: "object",
+                            properties:{
+                              "CodigoDisciplina": { type: "string"},
+                              "NomeDisciplina": { type: "string"},
+                              "PeriodoLetivo": { type: "string"},
+                              "CargaHoraria": {
+                                type: "array",
+                                items: {
+                                  type: "object",
+                                  properties: {
+                                    "HoraAula": { type: "string"},
+                                    "HoraRelogio": { type: "string" },
+                                    "Etiqueta": { type: "string" }
+                                  }
+                                }
+                              },
+                              "Nota": { type: "string"},
+                              "Aprovado": { 
+                                type: "object",
+                                properties:{
+                                  "FormaIntegralizacao": { type: "string"}
+                                }
+                              },
+                              "Docentes": {
+                                type: "array",
+                                items: {
+                                  type: "object",
+                                  properties: {
+                                    "Docente": { 
+                                      type: "object",
+                                      properties:{
+                                        "Nome": { type: "string"},
+                                        "Titulacao": { type: "string" },
+                                        "Lattes": { type: "string" },
+                                        "CPF": { type: "string" }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "AtividadeComplementar" : {
+                            type: "object",
+                            properties:{
+                              "CodigoAtividadeComplementar": { type: "string"},
+                              "DataInicio": { type: "string" , format: "date" },
+                              "DataFim": { type: "string" , format: "date" },
+                              "DataRegistro": { type: "string" , format: "date" },
+                              "TipoAtividadeComplementar": { type: "string"},
+                              "Descricao": { type: "string"},
+                              "CargaHorariaEmHoraRelogio" : {
+                                type: "array",
+                                items: {
+                                  type: "object",
+                                  properties: {
+                                    "HoraRelogio": { type: "string"},
+                                    "Etiqueta": { type: "string" }
+                                  }
+                                }
+                              },
+                              "DocentesResponsaveisPelaValidacao" : {
+                                type: "object",
+                                properties: {
+                                  "Docente" : {
+                                    type: "array",
+                                    items: {
+                                      type: "object",
+                                      properties: {
+                                        "Nome": { type: "string"},
+                                        "Titulacao": { type: "string" },
+                                        "Lattes": { type: "string" },
+                                        "CPF": { type: "string" }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DataEmissaoHistorico": { type: "string", format: "date" },
+                    "SituacaoAluno": { type: "string" },
+                    "SituacaoAtualDiscente" : {
+                      type: "object",
+                      properties: {
+                        "PeriodoLetivo": { type: "string" },
+                        "Formado" : {
+                          type: "object",
+                          properties: {
+                            "DataColacaoGrau": { type: "string" , format: "date" },
+                            "DataConclusaoCurso": { type: "string", format: "date" },
+                            "DataExpedicaoDiploma": { type: "string",  format: "date" },
+                          }
+                        }
+                      }
+                    },
+                    "ENADE" : {
+                      type: "array",
+                      items: {
+                        type: "object",
+                        properties: {
+                          "NaoHabilitado" : {
+                            type: "object",
+                            properties: {
+                              "Condicao": { type: "string" },
+                              "Edicao": { type: "string" },
+                              "OutroMotivo": { type: "string" }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "DataProvaEnade": { type: "string" , format: "date" },
+                    "CargaHorariaCursoIntegralizada" : {
+                      type: "object",
+                      properties: {
+                        "HoraAula": { type: "string" },
+                        "HoraRelogio": { type: "string" },
+                      }
+                    },
+                    "CargaHorariaCurso" : {
+                      type: "object",
+                      properties: {
+                        "HoraAula": { type: "string" },
+                        "HoraRelogio": { type: "string" },
+                      }
+                    },
+                    "IngressoCurso" : {
+                      type: "object",
+                      properties: {
+                        "Data": { type: "string" , format: "date" },
+                        "FormaIngresso": { type: "string" },
+                        "DataConclusao": { type: "string", format: "date" },
+                      }
+                    }
                   }
                 },
                 "Urlhistorico": { type: "string" }

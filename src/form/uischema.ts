@@ -1799,8 +1799,462 @@ export default {
                                           ]
                                         }
                                       ]
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "Mantenedora",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/RazaoSocial",
+                                          label: "Razão Social"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/CNPJ",
+                                          label: "CNPJ"
+                                        },
+                                        {
+                                          type: 'Group',
+                                          label: 'Endereço',
+                                          elements: [
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/Endereco/properties/Logradouro",
+                                              label: "Logradouro"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/Endereco/properties/Numero",
+                                              label: "Número"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/Endereco/properties/Complemento",
+                                              label: "Complemento"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/Endereco/properties/Bairro",
+                                              label: "Bairro"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/Endereco/properties/CodigoMunicipio",
+                                              label: "Código Município"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/Endereco/properties/NomeMunicipio",
+                                              label: "Nome Município"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/Endereco/properties/UF",
+                                              label: "UF Município"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/Endereco/properties/CEP",
+                                              label: "CEP"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/NomeMunicipiolesEmissora",
+                                          label: "Nome município les Emissora"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/UFlesEmissora",
+                                          label: "UF municipio les Emissora"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/AutorizacaolesEmissora",
+                                          label: "Autorização les Emissora"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/CredenciamentolesEmissora",
+                                          label: "Credenciamento les Emissora"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/ResponsavelHistorico",
+                                          label: "Responsável Histórico"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/CargoResponsavelHistorico",
+                                          label: "Cargo Responsável Histórico"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/lesEmissora/properties/Mantenedora/properties/Observacao",
+                                          label: "Observação"
+                                        }
+                                      ]
                                     }
                                   ]
+                                },
+                                {
+                                  type: "Group",
+                                  label: "HistoricoEscolar",
+                                  elements: [
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/CodigoCurrilo"
+                                    },
+                                    {
+                                      type: "Control",
+                                      label: "Elementos do Histórico",
+                                      scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/ElementosHistorico",
+                                      options:{
+                                        showSortButtons: true,
+                                        detail: {
+                                          type: "VerticalLayout",
+                                          elements: [
+                                            {
+                                              type: "Group",
+                                              label: "Disciplina",
+                                              elements: [
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/Disciplina/properties/CodigoDisciplina",
+                                                  label: "Código Disciplina"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/Disciplina/properties/NomeDisciplina",
+                                                  label: "Nome Disciplina"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/Disciplina/properties/PeriodoLetivo",
+                                                  label: "Período Letivo"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  label: "Carga Horária",
+                                                  scope: "#/properties/Disciplina/properties/CargaHoraria",
+                                                  options:{
+                                                    showSortButtons: true,
+                                                    detail: {
+                                                      type: "VerticalLayout",
+                                                      elements: [
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/HoraAula",
+                                                          label: "Hora aula"
+                                                        },
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/HoraRelogio",
+                                                          label: "Hora Relógio"
+                                                        },
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/Etiqueta",
+                                                          label: "Etiqueta"
+                                                        }
+                                                      ]
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/Disciplina/properties/Nota",
+                                                  label: "Nota"
+                                                },
+                                                {
+                                                  type: "Group",
+                                                  label: "Aprovado",
+                                                  scope: "#/properties/Disciplina/properties/Aprovado",
+                                                  elements: [
+                                                    {
+                                                      type: "Control",
+                                                      scope: "#/properties/Disciplina/properties/Aprovado/properties/FormaIntegralizacao",
+                                                      label: "Forma Integralizacao"
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  label: "Docentes",
+                                                  scope: "#/properties/Disciplina/properties/Docentes",
+                                                  options:{
+                                                    showSortButtons: true,
+                                                    detail: {
+                                                      type: "VerticalLayout",
+                                                      elements: [
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/Docente/properties/Nome",
+                                                          label: "Nome"
+                                                        },
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/Docente/properties/Titulacao",
+                                                          label: "Titulacao"
+                                                        },
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/Docente/properties/Lattes",
+                                                          label: "Lattes"
+                                                        },
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/Docente/properties/CPF",
+                                                          label: "CPF"
+                                                        }
+                                                      ]
+                                                    }
+                                                  }
+                                                },
+                                              ]
+                                            },
+                                            {
+                                              type: "Group",
+                                              label: "Atividade Complementar",
+                                              elements: [
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/AtividadeComplementar/properties/CodigoAtividadeComplementar",
+                                                  label: "Código atividade complementar"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/AtividadeComplementar/properties/DataInicio",
+                                                  label: "Data Inicio"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/AtividadeComplementar/properties/DataFim",
+                                                  label: "Data Fim"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/AtividadeComplementar/properties/DataRegistro",
+                                                  label: "Data Registro"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/AtividadeComplementar/properties/TipoAtividadeComplementar",
+                                                  label: "Tipo Atividade Complementar"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  scope: "#/properties/AtividadeComplementar/properties/Descricao",
+                                                  label: "Descrição"
+                                                },
+                                                {
+                                                  type: "Control",
+                                                  label: "Carga horaria em hora relogio",
+                                                  scope: "#/properties/AtividadeComplementar/properties/CargaHorariaEmHoraRelogio",
+                                                  options:{
+                                                    showSortButtons: true,
+                                                    detail: {
+                                                      type: "VerticalLayout",
+                                                      elements: [
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/HoraRelogio",
+                                                          label: "Hora Relógio"
+                                                        },
+                                                        {
+                                                          type: "Control",
+                                                          scope: "#/properties/Etiqueta",
+                                                          label: "Etiqueta"
+                                                        }
+                                                      ]
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  type: "Group",
+                                                  label: "Docentes responsáveis pela validação",
+                                                  elements: [
+                                                    {
+                                                      type: "Control",
+                                                      scope: "#/properties/AtividadeComplementar/properties/DocentesResponsaveisPelaValidacao/properties/Docente",
+                                                      options:{
+                                                        showSortButtons: true,
+                                                        detail: {
+                                                          type: "VerticalLayout",
+                                                          elements: [
+                                                            {
+                                                              type: "Control",
+                                                              scope: "#/properties/Nome",
+                                                              label: "Nome Docente"
+                                                            },
+                                                            {
+                                                              type: "Control",
+                                                              scope: "#/properties/Titulacao",
+                                                              label: "Titulaçao"
+                                                            },
+                                                            {
+                                                              type: "Control",
+                                                              scope: "#/properties/Lattes",
+                                                              label: "Lattes"
+                                                            },
+                                                            {
+                                                              type: "Control",
+                                                              scope: "#/properties/CPF",
+                                                              label: "CPF"
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/DataEmissaoHistorico",
+                                      label: "Data emissão histórico"
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/SituacaoAluno",
+                                      label: "Situação do aluno"
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "Situação discente",
+                                      scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/SituacaoAtualDiscente",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/SituacaoAtualDiscente/properties/PeriodoLetivo",
+                                          label: "Periodo letivo"
+                                        },
+                                        {
+                                          type: "Group",
+                                          label: "Formado",
+                                          scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/SituacaoAtualDiscente/properties/Formado",
+                                          elements: [
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/SituacaoAtualDiscente/properties/Formado/properties/DataColacaoGrau",
+                                              label: "Data Colação Grau"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/SituacaoAtualDiscente/properties/Formado/properties/DataConclusaoCurso",
+                                              label: "Data Conclusão do Curso"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/SituacaoAtualDiscente/properties/Formado/properties/DataExpedicaoDiploma",
+                                              label: "Data Expedição Diploma"
+                                            },
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: "Control",
+                                      label: "ENADE",
+                                      scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/ENADE",
+                                      options:{
+                                        showSortButtons: true,
+                                        detail: {
+                                          type: "VerticalLayout",
+                                          elements: [
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/NaoHabilitado/properties/Condicao",
+                                              label: "Condição"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/NaoHabilitado/properties/Edicao",
+                                              label: "Edição"
+                                            },
+                                            {
+                                              type: "Control",
+                                              scope: "#/properties/NaoHabilitado/properties/OutroMotivo",
+                                              label: "Outro Motivo"
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    },
+                                    {
+                                      type: "Control",
+                                      scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/DataProvaEnade",
+                                      label: "Data prova Enade"
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "Carga Horaria Curso Integralizada",
+                                      scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/CargaHorariaCursoIntegralizada",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/CargaHorariaCursoIntegralizada/properties/HoraAula",
+                                          label: "Hora Aula"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/CargaHorariaCursoIntegralizada/properties/HoraRelogio",
+                                          label: "Hora Relógio"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "Carga Horaria Curso",
+                                      scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/CargaHorariaCurso",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/CargaHorariaCurso/properties/HoraAula",
+                                          label: "Hora Aula"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/CargaHorariaCurso/properties/HoraRelogio",
+                                          label: "Hora Relógio"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      type: "Group",
+                                      label: "Carga Horaria Curso",
+                                      scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/IngressoCurso",
+                                      elements: [
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/IngressoCurso/properties/Data",
+                                          label: "Data"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/IngressoCurso/properties/FormaIngresso",
+                                          label: "Forma Ingresso"
+                                        },
+                                        {
+                                          type: "Control",
+                                          scope: "#/properties/HistoricoEscolar/properties/HistoricoEscolar/properties/IngressoCurso/properties/DataConclusao",
+                                          label: "Data Conclusão"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  type: "Control",
+                                  scope: "#/properties/HistoricoEscolar/properties/Urlhistorico",
+                                  label: "Url histórico"
                                 }
                               ]
                             }
