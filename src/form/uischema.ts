@@ -22,10 +22,6 @@ export default {
                 {
                   type: "Control",
                   scope: "#/properties/design"
-                },
-                {
-                  type: "Control",
-                  scope: "#/properties/2via"
                 }
               ]
             }
@@ -35,8 +31,13 @@ export default {
           type: "VerticalLayout",
           elements: [
             {
+              
               type: "VerticalLayout",
               elements: [
+                {
+                  type: "Control",
+                  scope: "#/properties/2via"
+                },
                 {
                   type: "Control",
                   label: "Diplomas",
