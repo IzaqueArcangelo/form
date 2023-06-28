@@ -10,10 +10,11 @@
       @change="onChange"
     />
   </div>
-  {{ data }}
+  <!-- {{ data }} -->
+  <JsonViewer :value="data" copyable boxed sort theme="dark" />
 </template>
 <script lang="ts">
-
+import { JsonViewer } from "vue3-json-viewer"
 import { defineComponent } from "vue";
 import { JsonForms, JsonFormsChangeEvent } from "@jsonforms/vue";
 import {
@@ -127,6 +128,7 @@ export default defineComponent({
   name: "App",
   components: {
     JsonForms,
+    JsonViewer
   },
   data() {
     return {
