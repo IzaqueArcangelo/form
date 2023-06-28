@@ -30,7 +30,7 @@ import uischema from './form/uischema';
 import data from './form/form';
 
 // mergeStyles combines all classes from both styles definitions into one
-const myStyles = mergeStyles(defaultStyles, { control: { label: "mylabel",  input: "form-control" } });
+const myStyles = mergeStyles(defaultStyles, { control: { label: "mylabel",  input: "form-control", select: "form-control" } });
 //const ajvConfig = createAjv({ schemaId: 'id', allErrors: false });
 //const ajvs = new Ajv({ schemaId: 'id', allErrors: false })
 //const ajv = new Ajv({allErrors: true})
@@ -193,4 +193,15 @@ export default defineComponent({
 .error{
   display: none;
 }
+
+input[type="checkbox"].input.form-control {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
 </style>
