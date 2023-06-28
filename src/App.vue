@@ -12,8 +12,8 @@
   </div>
   {{ data }}
 </template>
-
 <script lang="ts">
+
 import { defineComponent } from "vue";
 import { JsonForms, JsonFormsChangeEvent } from "@jsonforms/vue";
 import {
