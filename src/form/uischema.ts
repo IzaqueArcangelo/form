@@ -242,7 +242,7 @@ export default {
                               scope: "#/properties/VEICULO_PUB_RECONHECIMENTO"
                             },
                             {
-                              type: "HorizontalLayout",
+                              type: "VerticalLayout",
                               elements: [
                                 {
                                   type: "Control",
