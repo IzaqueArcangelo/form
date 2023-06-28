@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <h1>JSON Forms Vue 3</h1>
+  <h1>EDITOR DE FORMULÁRIO JSON</h1>
   <div class="myform--">
     <json-forms
       :data="data"
@@ -17,6 +17,8 @@
 import { JsonViewer } from "vue3-json-viewer"
 import { defineComponent } from "vue";
 import { JsonForms, JsonFormsChangeEvent } from "@jsonforms/vue";
+//import { createAjv } from '@jsonforms/core';
+
 import {
   defaultStyles,
   mergeStyles,
@@ -29,6 +31,9 @@ import data from './form/form';
 
 // mergeStyles combines all classes from both styles definitions into one
 const myStyles = mergeStyles(defaultStyles, { control: { label: "mylabel",  input: "form-control" } });
+//const ajvConfig = createAjv({ schemaId: 'id', allErrors: false });
+//const ajvs = new Ajv({ schemaId: 'id', allErrors: false })
+//const ajv = new Ajv({allErrors: true})
 
 const renderers = [
   ...vanillaRenderers,
@@ -136,7 +141,7 @@ export default defineComponent({
       renderers: Object.freeze(renderers),
       data,
       schema,
-      uischema,
+      uischema
     };
   },
   methods: {
@@ -183,5 +188,9 @@ export default defineComponent({
 
 .text-area {
   min-height: 80px;
+}
+
+.error{
+  display: none;
 }
 </style>
